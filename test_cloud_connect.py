@@ -9,8 +9,6 @@ load_dotenv()
 
 PASSWORD = os.getenv("first_password")
 USER = os.getenv("first_user")
-IP = "localhost"
-MONGO_PORT = 27017
 DB_NAME = "turbines_data"
 TURBINES_DATA_PATHS = [
     "data/Turbine1.csv",
@@ -49,5 +47,6 @@ for turbine_path in TURBINES_DATA_PATHS:
     reformat_turbine_csv(df)
     turbine_idx = int(turbine_path.split("Turbine")[1].split(".")[0])
     data_dict = df.to_dict("records")
+    # deleting all documents in the collection before inserting new ones
+    db[f"turbine{turbine_idx}"].delete_many({})
     db[f"turbine{turbine_idx}"].insert_many(data_dict)
-    db[f"{turbine_idx}"].drop()
