@@ -7,12 +7,11 @@ import { useState } from 'react';
 
 function App() {
     const [animationCompleted, setAnimationCompleted] = useState(false);
-    console.log(animationCompleted);
     return (
         <div className="App">
 
             {!animationCompleted && <SlideScreen setAnimationCompleted={setAnimationCompleted} />}
-            <header>Wind Power</header>
+            <header>Wind Data</header>
             <div className={`all-turbines  ${animationCompleted ? "allow-overflow" : ""}`}>
                 <TurbineInformation title={"Turbine 1"} />
                 <TurbineInformation title={"Turbine 2"} />

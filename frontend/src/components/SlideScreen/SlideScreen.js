@@ -10,8 +10,6 @@ const SlideScreen = ({ setAnimationCompleted }) => {
 
     useEffect(() => {
         if (clicked) {
-            console.log("clicked");
-
             setTimeout(() => setAnimationCompleted(true), 3000);
         }
         // eslint-disable-next-line

@@ -27,4 +27,3 @@ async def root():
 async def turbine1(turbine: str, date: str):
     print(date)
     return fetch_one_from_collection_by_date(turbine, desired_columns, date)
-    return 41
