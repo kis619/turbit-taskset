@@ -1,0 +1,16 @@
+.input-field {
+  background: rgb(191, 210, 158);
+  color: black;
+  border: 3px outset darkgreen;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.input-field:hover {
+  background: rgba(191, 210, 158, 0.8);
+  color: black;
+  border: 3px inset darkgreen;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}

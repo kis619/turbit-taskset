@@ -1,0 +1,47 @@
+.App {
+    text-align: center;
+    max-height: 100%;
+}
+
+header {
+    margin-top: 2rem;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.all-turbines {
+    margin-block-start: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    overflow-y: hidden;
+    max-height: 90vh;
+    padding-block-end: 2rem;
+}
+
+.allow-overflow {
+    overflow-y: auto;
+    max-height: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: rgb(181, 220, 113);
+
+}
+
+#github-icon {
+    color: black;
+    width: 24px;
+    height: 24px;
+}
+
+#linkedin-icon {
+    width: 24px;
+    height: 24px;
+}

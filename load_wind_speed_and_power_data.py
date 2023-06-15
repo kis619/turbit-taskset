@@ -35,17 +35,13 @@ def get_data_for_all_datetimes(collection: list, columns: list):
 
 
 if __name__ == "__main__":
-    # date_power_wind = {}
     date_power_wind = get_data_for_all_datetimes(
         list(db["turbine1"].find()),
         ["Leistung (kW)", "Wind (m/s)"]
     )
 
-    # df = pd.DataFrame.from_dict(date_power_wind)
     df = pd.DataFrame(date_power_wind.values(),
                       index=date_power_wind.keys(),
                       columns=['Wind_Speed', 'Power_Output'])
 
     print(df.head())
-    # print(df.loc["31.03.2016, 04:00"])
-    # print(df.loc["01.01.2016, 00:10"])

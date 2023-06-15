@@ -1,0 +1,122 @@
+.slide-screen {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.element-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(253, 187, 45, 1) 0%,
+    rgba(34, 193, 195, 1) 100%
+  );
+  z-index: 2;
+  transition: 1s all ease-in-out;
+  border-right: 1px solid gold;
+}
+
+.animate-left {
+  animation: slideOffLeft 3s forwards;
+}
+
+@keyframes slideOffLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.element-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(253, 187, 45, 1) 0%,
+    rgba(34, 193, 195, 1) 100%
+  );
+
+  border-left: 2px solid rgb(67, 172, 174);
+  z-index: 2;
+  transition: 1s all ease-in-out;
+}
+
+.animate-right {
+  animation: slideOffRight 3s forwards;
+}
+
+@keyframes slideOffRight {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.slide-screen button {
+  background-color: rgba(253, 187, 45, 1);
+  border: rgba(34, 193, 195, 1) 3px ridge;
+  color: white;
+  font-size: 3vw;
+  max-width: 260px;
+  max-height: 260px;
+  width: 15vh;
+  height: 15vh;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  cursor: pointer;
+  font-size: 2em;
+  overflow: hidden;
+}
+
+.animate-button {
+  animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 100%);
+  }
+}
+
+.slide-screen span.element-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15vw;
+  color: rgb(57, 121, 144);
+  font-weight: bold;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+}
