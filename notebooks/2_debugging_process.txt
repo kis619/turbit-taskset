@@ -1,0 +1,20 @@
+How would you find and fix an error that seems to occur randomly when an API endpoint is called?
+
+I would argue that in 90% of the cases finding the error is almost equivalent to fixing it.
+The other 10% you are wondering what poor life choices led you to this point,  where you have to
+refactor 70% of your code.
+
+To identify the cause of the error I try to demistify the randomness and find the actual cases
+where it occurs. To do that I initially try to pinpoint the place or an area where the error
+is coming from by some simple reasoning. I would ask myself questions and form hypotheses about the 
+cause. Is the data in the db wrong, is the wrong data being retrieved, is the wrong data being
+displayed? Often times this is enough to spot the error. When not, having narrowed down
+the possibilities I would either start printing things or use an actual debugger. Another practical
+approach I sometimes employ is commenting chunks of code out. I guess reading documentation also 
+helps, but as one of my favourite programmer jokes goes: Debugging for 6 hours can save you 5 minutes
+of reading documentation..
+
+Lately I have also actively involved ChatGpt in my debugging process. Rubber ducking is still
+an option and when everything else fails taking a walk really helps clear my mind.
+
+

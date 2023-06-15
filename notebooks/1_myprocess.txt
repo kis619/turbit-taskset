@@ -1,0 +1,47 @@
+To do this project I had to come to terms with concepts I have been gravitating around
+for quite some time without actually 'getting my hands dirty'.
+This task was perfect for me because it was the exact amount of challenging - not so
+easy that I would get bored and not so difficult that I would give up.
+
+Here's some of the things I did:
+
+Setting up a database service
+(
+    I got to explore three options:
+    - installing it on my linux
+    - using a docker container
+    - using Atlas to host it for me
+)
+
+PLaying a bit with mongosh
+(
+    to get a feel about the structure.
+)
+
+Connecting it with my backend 
+(
+    easy enough but I had never done it
+)
+
+Connecting the backend with the frontend
+
+Playing around with pandas
+(
+    - I may or may not have spent 10 minutes trying to figure out why I was getting errors
+    reading the csv file, before realising the values were separated by a semicolon...............
+    - Checking out the data
+    - Formatting and reformatting the data for ease of use
+)
+
+Learning how to deploy!!
+(
+    From the moment I read the assignment I knew I wanted to actually deploy it.
+    I had never done that before so it was very satisfactory when it finally worked
+    https://wind-power.netlify.app/
+)
+
+Dockering
+(
+    - Splitting the project into services and tying them all together with a docker compose
+    - Port mapping turned out to be something which I needed extensive time to apply correctly
+)
