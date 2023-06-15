@@ -2,7 +2,7 @@ import pandas as pd
 from pymongo import MongoClient
 
 # DB constants
-IP = "localhost"
+IP = "mongodb"
 MONGO_PORT = 27019
 DB_NAME = "turbines_data"
 
