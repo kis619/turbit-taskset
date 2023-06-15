@@ -36,13 +36,15 @@ Follow these instructions to get the project up and running on your local machin
 
 Below is the basic project structure:
 
-├── backend # Contains backend service code built with Python FastAPI
-├── docker-compose.yml # Defines services, networks and volumes
-├── frontend # Contains frontend service code built with JavaScript and React
-├── MongoDB # MongoDB data volume
-├── notebooks # Contains notes on the project process
-└── README.md # This beautiful file
-
+``` bash
+.
+├── backend               # Contains backend service code built with Python FastAPI
+├── docker-compose.yml    # Defines services, networks and volumes
+├── frontend              # Contains frontend service code built with JavaScript and React
+├── MongoDB               # MongoDB data volume
+├── notebooks             # Contains notes on the project process
+└── README.md             # This beautiful file
+```
 ## Usage
 
 - The **frontend** service is accessible at `localhost:3000`
