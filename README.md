@@ -41,7 +41,7 @@ Below is the basic project structure:
 ├── backend               # Contains backend service code built with Python FastAPI
 ├── docker-compose.yml    # Defines services, networks and volumes
 ├── frontend              # Contains frontend service code built with JavaScript and React
-├── MongoDB               # MongoDB data volume
+├── MongoDB               # MongoDB data volume - gets created on build
 ├── notebooks             # Contains notes on the project process
 └── README.md             # This beautiful file
 ```
@@ -49,7 +49,7 @@ Below is the basic project structure:
 
 - The **frontend** service is accessible at `localhost:3000`
 - The **backend** service is accessible at `localhost:8001`
-- **MongoDB** is accessible at `localhost:27019`
+- The **database** is accessible at `localhost:27019`
 
 ## Notes
 
