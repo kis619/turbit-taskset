@@ -2,8 +2,8 @@ import pandas as pd
 from pymongo import MongoClient
 
 
-IP = "localhost"
-MONGO_PORT = 27019
+IP = "mongodb"
+MONGO_PORT = 27017
 DB_NAME = "turbines_data"
 TURBINES_DATA_PATHS = [
     "data/Turbine1.csv",
@@ -29,7 +29,6 @@ def reformat_turbine_csv(df):
                   for name, metric in zip(df.columns, df.iloc[0])]
     df.drop(0, inplace=True)
     df.reset_index(drop=True, inplace=True)
-
 
 for turbine_path in TURBINES_DATA_PATHS:
     df = pd.read_csv(turbine_path, delimiter=";")
