@@ -45,3 +45,8 @@ Dockering
     - Splitting the project into services and tying them all together with a docker compose
     - Port mapping turned out to be something which I needed extensive time to apply correctly
 )
+
+Documenting
+{
+    I had CHatGPT write my README.md and LICENSE
+}

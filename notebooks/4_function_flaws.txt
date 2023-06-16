@@ -1,0 +1,28 @@
+What might be a problem with the provided function?
+
+I could not spot a logical flaw, assuming start_consume_trigger_message handles
+None gracefully.
+
+However, the code could be tricky to maintain and is a bit difficult to read.
+What could be done differently is splitting the code in two.
+The 'if' tree could become a function get_trigger_callable and the body of
+consume_trigger_messages becomes:
+
+    consumer_group_name = trigger_consumer_rqmt.get_consumer_group_name()
+    trigger_callable = get_trigger_callable(consumer_group_name, ...)
+
+    trigger_consumer_rqmt.start_consume_trigger_message(
+        trigger_callable=trigger_callable
+    )
+
+The silenced linter warning is also indicative that some design changes are
+needed.
+Putting the requirements in a class or some sort of data container might be
+considered.
+
+Also, instead of the else if tree a map could be used.
+
+All these changes could be implemented to make the code
+more easy to read and a bit easier to maintain.
+
+

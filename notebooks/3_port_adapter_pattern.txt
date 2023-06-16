@@ -1,0 +1,13 @@
+What are advantages and disadvantages of the port-adapter pattern?
+
+Pros:
+    - Since you uncouple the core logic from external sevices you are not
+    depending on these services and can easily replace them ,if there is a need,
+    without having to touch the main logic
+    - Easier to test because of the lack of external dependencies. You can
+    use a mock db for example
+
+Cons:
+    - More code ( and an extra layer of abstraction) hence more room for error
+    - generally more complex and more challenging to run locally
+    - multiple API calls could affect performance 
